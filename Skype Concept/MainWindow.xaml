@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Skype_Concept"
         mc:Ignorable="d"
         Title="Skype Concept"
         Height="562"
@@ -12,17 +11,115 @@
         WindowStartupLocation="CenterScreen"
         Background="#19FFFFFF" AllowsTransparency="True" WindowStyle="None" Loaded="Window_Loaded">
     <Grid Background="#99FFFFFF">
-        <Grid Opacity="0.01">
+        <Grid HorizontalAlignment="Left" Height="562" VerticalAlignment="Top" Width="125" Background="#4CFFFFFF">
+
+            <Label FontSize="20" Content="Skype" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="29,66,29,0"/>
+
+            <Button Content="&#xE7E7;" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="125" Height="64" FontFamily="Segoe MDL2 Assets" FontSize="20" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <Button Content="&#xF180;" HorizontalAlignment="Left" Margin="0,179,0,0" VerticalAlignment="Top" Width="125" Height="64" FontFamily="Segoe MDL2 Assets" FontSize="20" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <Button Content="&#xE2AF;" HorizontalAlignment="Left" Margin="0,243,0,0" VerticalAlignment="Top" Width="125" Height="64" FontFamily="Segoe MDL2 Assets" FontSize="20" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <Button Content="&#xE75F;" HorizontalAlignment="Left" Margin="0,307,0,0" VerticalAlignment="Top" Width="125" Height="64" FontFamily="Segoe MDL2 Assets" FontSize="20" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <Button Content="&#xE713;" HorizontalAlignment="Left" Margin="0,402.5,0,0" VerticalAlignment="Top" Width="125" Height="64" FontFamily="Segoe MDL2 Assets" FontSize="20" BorderBrush="{x:Null}" Background="{x:Null}"/>
+
+            <Ellipse VerticalAlignment="Bottom" Width="55" Height="55" Margin="29">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets\20171222184814_YQhGs.jpeg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+        </Grid>
+
+        <Grid>
             <Grid.Background>
-                <ImageBrush ImageSource="Assets/white-noise2-1024x768.jpg"/>
+                <ImageBrush Opacity="0.01" ImageSource="Assets/white-noise2-1024x768.jpg"/>
             </Grid.Background>
-        </Grid>
-        <Grid  Height="39"  VerticalAlignment="Top" Width="983">
-            <Button x:Name="button" Content="X" HorizontalAlignment="Left" Margin="935,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Microsoft Sans Serif" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0"/>
-            <Button x:Name="button_Copy" Content="&#xE923;" HorizontalAlignment="Left" Margin="888,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Segoe MDL2 Assets" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0"/>
-            <Button x:Name="button_Copy1" Content="_" HorizontalAlignment="Left" Margin="841,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Lucida Sans Typewriter" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0"/>
+            <Label x:Name="label" Content="Conversation" HorizontalAlignment="Left" Margin="136,65.972,0,0" VerticalAlignment="Top" Width="258" FontSize="20" FontWeight="Bold"/>
+            <Button Content="&#xE1A3;" HorizontalAlignment="Left" Margin="144,106.011,0,0" VerticalAlignment="Top" Height="28" Width="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets"/>
+            <Button  Content="&#xE109;" HorizontalAlignment="Left" Margin="182,106.011,0,0" VerticalAlignment="Top" Height="28" Width="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets"/>
+            <Label  Content="Hoy" HorizontalAlignment="Left" Margin="142,138.972,0,0" VerticalAlignment="Top"/>
+
+            <Rectangle HorizontalAlignment="Left" Height="25" Margin="137.994,181.012,0,0" VerticalAlignment="Top" Width="4" Fill="#FF00ADEF"/>
 
 
+            <Ellipse Margin="148.244,165.761,783.755,0" Height="50" Width="50" VerticalAlignment="Top">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets/2018082808083239536.jpg"/>
+                </Ellipse.Fill>
+
+            </Ellipse>
+            <Label Content="Alexandra" HorizontalAlignment="Left" Margin="202.991,164.732,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Ella:Let's go eat the grilled fish." HorizontalAlignment="Left" Margin="201.994,188.222,0,0" VerticalAlignment="Top" Width="163.006"/>
+            <Label Content="16:24" HorizontalAlignment="Left" Margin="349.329,169.377,0,0" VerticalAlignment="Top"/>
+            <Label Content="&#xEC61;" HorizontalAlignment="Left" Margin="367.625,188.967,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Foreground="#FF00ADEF" Width="27.375"/>
+            <Ellipse Margin="148.616,253.766,783.383,258.234" Width="50">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets/2018129234427_ms5WV.jpeg"/>
+                </Ellipse.Fill>
+
+            </Ellipse>
+            <Label  Content="Eliot" HorizontalAlignment="Left" Margin="203.362,252.737,0,0" FontWeight="Bold" VerticalAlignment="Top"/>
+            <Label  Content="El:Okay, I know." HorizontalAlignment="Left" Margin="202.366,276.227,0,260.49" Width="135" d:LayoutOverrides="Height"/>
+            <Label  Content="16:04" HorizontalAlignment="Left" Margin="349.7,257.382,0,279.363" d:LayoutOverrides="Height"/>
+            <Label  Content="&#xEC61;" HorizontalAlignment="Left" Margin="367.997,276.972,0,262.989" FontFamily="Segoe MDL2 Assets" Foreground="#FF00ADEF" Width="27.375" d:LayoutOverrides="Height"/>
+
+
+
         </Grid>
+
+
+        <Grid HorizontalAlignment="Right" Height="562" VerticalAlignment="Top" Width="586" Background="WhiteSmoke">
+            <Ellipse Margin="-247.086,0,783.085,163.884" Height="50" Width="50" VerticalAlignment="Bottom">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets/20181202192931_2Rky8.jpeg"/>
+                </Ellipse.Fill>
+
+            </Ellipse>
+            <Label Content="Alice" HorizontalAlignment="Left" Margin="-192.339,0,0,189.628" VerticalAlignment="Bottom" FontWeight="Bold"/>
+            <Label Content="Tu:Everything is ok." Margin="-193.335,0,0,167.458" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="157.335"/>
+            <Label Content="15:38" HorizontalAlignment="Left" Margin="-46,0,0,184.983" VerticalAlignment="Bottom"/>
+            <Label Content="&#xEC61;" HorizontalAlignment="Left" Margin="-27.704,0,0,168.633" VerticalAlignment="Bottom" FontFamily="Segoe MDL2 Assets" Foreground="#FF203A44" Width="27.375"/>
+
+
+            <Rectangle Height="40" Margin="68.165,0,0,47" VerticalAlignment="Bottom" Fill="#FF8FD9F5" RadiusX="15" RadiusY="15" HorizontalAlignment="Left" Width="188.335"/>
+            <Label  Content="Let's go eat the grilled fish." HorizontalAlignment="Left" Margin="79.33,0,0,54.33" VerticalAlignment="Bottom"/>
+
+        </Grid>
+        <Grid  Height="39"  VerticalAlignment="Top" Width="983" Background="#FF00ADEF">
+            <Button x:Name="ButtonClose" Click="ButtonClose_Click" Content="X" HorizontalAlignment="Left" Margin="935,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Microsoft Sans Serif" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="ButtonMax" Content="&#xE923;" HorizontalAlignment="Left" Margin="888,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Segoe MDL2 Assets" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="ButtonMin" Content="_" HorizontalAlignment="Left" Margin="841,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Lucida Sans Typewriter" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
+        </Grid>
+
+        <Ellipse Width="45" Height="45" HorizontalAlignment="Left" Margin="410,0,0,47" VerticalAlignment="Bottom">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Assets/2018082808083239536.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <Grid Height="38" Margin="396,0,0,0" VerticalAlignment="Bottom" Background="#FF00ADEF">
+            <Label Content="Send a message" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" Margin="21.153,6.38,0,6.38"/>
+            <Label  Content="|" HorizontalAlignment="Right" Margin="0,6.44,197.66,6.32"  Foreground="White" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+            <Button Content="&#xE9D9;" HorizontalAlignment="Right" Margin="0,0,118.5,0" Width="38" Height="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets" Foreground="White"/>
+            <Button Content="&#xE729;" HorizontalAlignment="Right" Margin="0,0,80.497,0" Width="38" Height="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets" Foreground="White"/>
+            <Button Content="&#xEC71;" HorizontalAlignment="Right" Margin="0,0,42.051,0" Width="38" Height="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets" Foreground="White"/>
+
+            <Ellipse HorizontalAlignment="Right" Height="30" Width="30" Margin="0 0 10 0" Fill="White"/>
+
+            <Button  Content="&#xE122;"  Margin="0,11,15.75,11" HorizontalAlignment="Right" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets" Foreground="#FF00ADEF"/>
+            <Button  Content="&#xE76E;" HorizontalAlignment="Right" Margin="0,0,157.058,0" Width="38" Height="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets" Foreground="White"/>
+
+        </Grid>
+        <Ellipse Width="30" Height="30" HorizontalAlignment="Right" Margin="0,0,17,107" VerticalAlignment="Bottom">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Assets\20171222184814_YQhGs.jpeg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle HorizontalAlignment="Right" Height="60" Margin="0,0,44,140" Fill="#FF00ADEF" RadiusY="15" RadiusX="15" VerticalAlignment="Bottom" Width="230">
+
+        </Rectangle>
+        <Label Content="Tomorrow is Christmas, where are &#xD;&#xA;we going to play?" HorizontalAlignment="Right" Margin="0,0,54.22,151.52" VerticalAlignment="Bottom" d:LayoutOverrides="HorizontalAlignment" Foreground="White"/>
+        <Label Content="Alexandra" HorizontalAlignment="Left" Margin="407.87,39.6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28"/>
+
+
     </Grid>
 </Window>

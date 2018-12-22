@@ -4,7 +4,6 @@ E:\GitHub\Skype Concept\Skype Concept\bin\Debug\Skype Concept.pdb
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\MainWindow.g.cs
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\App.g.cs
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept_MarkupCompile.cache
-E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept_MarkupCompile.lref
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\MainWindow.baml
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept.g.resources
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype_Concept.Properties.Resources.resources

@@ -86,6 +86,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Design\projectGuides.guides" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +97,19 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\white-noise2-1024x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\20171222184814_YQhGs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\v2-ffdf9826535b8864e177671927cb70d6_hd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\2018082808083239536.jpg" />
+    <Resource Include="Assets\2018129234427_ms5WV.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\20181202192931_2Rky8.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

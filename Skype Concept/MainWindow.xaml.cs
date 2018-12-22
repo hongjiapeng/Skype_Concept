@@ -13,10 +13,7 @@ namespace Skype_Concept
         [DllImport("user32.dll")]
         internal static extern int SetWindowCompositionAttribute(IntPtr hwnd,ref WindowCompositionAttributeData data);
 
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        public MainWindow() => InitializeComponent();
 
         internal enum AccentState
         {
@@ -52,7 +49,7 @@ namespace Skype_Concept
         }
 
         /// <summary>
-        /// 启用模糊
+        /// Enable blur
         /// </summary>
         internal void EnableBlur()
         {
@@ -82,15 +79,17 @@ namespace Skype_Concept
             Marshal.FreeHGlobal(accentPtr);
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            EnableBlur();
-        }
+        private void Window_Loaded(object sender, RoutedEventArgs e) => EnableBlur();
 
-        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            DragMove();
-        }
+        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => DragMove();
+
+        /// <summary>
+        /// Close this Window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonClose_Click(object sender, RoutedEventArgs e) => Close();
+      
     }
 
 
