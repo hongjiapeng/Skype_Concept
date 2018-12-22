@@ -1,6 +1,5 @@
-# Skype_Concept
-
+## WPF Redesign Skype
 
 #### Rendering 
 
-![image](https://github.com/hongjiapeng/Skype_Concept/master/Assets/TIM图片20181222220147.png)   
+![tim20181222220147](https://user-images.githubusercontent.com/26671281/50376150-3c41d180-0644-11e9-86b9-bb63cab1e370.png)
