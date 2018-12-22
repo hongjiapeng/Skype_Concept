@@ -3,4 +3,4 @@
 
 #### Rendering 
 
-![image](https://github.com/hongjiapeng/Skype_Concept/master/Assets/TIM20181222220147.png)   
+![image](https://github.com/hongjiapeng/Skype_Concept/blob/master/Assets/TIM20181222220147.png)   
