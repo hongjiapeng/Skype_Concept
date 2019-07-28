@@ -4,14 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Skype Concept"
         Height="562"
         Width="982" 
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         WindowStartupLocation="CenterScreen"
-        Background="#19FFFFFF" AllowsTransparency="True" WindowStyle="None" Loaded="Window_Loaded">
+        Background="#19FFFFFF" 
+        AllowsTransparency="True" 
+        WindowStyle="None" 
+        Loaded="Window_Loaded">
+    
     <Grid Background="#99FFFFFF">
-        <Grid HorizontalAlignment="Left" Height="562" VerticalAlignment="Top" Width="125" Background="#4CFFFFFF">
+        <Grid HorizontalAlignment="Left"  Height="562" VerticalAlignment="Top" Width="125" Background="#4CFFFFFF">
 
             <Label FontSize="20" Content="Skype" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="29,66,29,0"/>
 
@@ -85,9 +88,9 @@
 
         </Grid>
         <Grid  Height="39"  VerticalAlignment="Top" Width="983" Background="#FF00ADEF">
-            <Button x:Name="ButtonClose" Click="ButtonClose_Click" Content="X" HorizontalAlignment="Left" Margin="935,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Microsoft Sans Serif" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
-            <Button x:Name="ButtonMax" Content="&#xE923;" HorizontalAlignment="Left" Margin="888,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Segoe MDL2 Assets" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
-            <Button x:Name="ButtonMin" Content="_" HorizontalAlignment="Left" Margin="841,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Lucida Sans Typewriter" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="ButtonClose" ToolTip="Close" Click="ButtonClose_Click" Content="&#xE8BB;" HorizontalAlignment="Left" Margin="935,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Segoe MDL2 Assets" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="ButtonMax" ToolTip="Maximize" Click="ButtonMax_Click" Content="&#xE922;" HorizontalAlignment="Left" Margin="888,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Segoe MDL2 Assets" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
+            <Button x:Name="ButtonMin" ToolTip="Minimize" Click="ButtonMin_Click" Content="&#xE921;" HorizontalAlignment="Left" Margin="841,0,0,0" VerticalAlignment="Top" Width="47" FontFamily="Segoe MDL2 Assets" FontSize="16" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White"/>
         </Grid>
 
         <Ellipse Width="45" Height="45" HorizontalAlignment="Left" Margin="410,0,0,47" VerticalAlignment="Bottom">

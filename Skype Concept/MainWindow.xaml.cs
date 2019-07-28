@@ -83,14 +83,22 @@ namespace Skype_Concept
 
         private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => DragMove();
 
-        /// <summary>
-        /// Close this Window
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void ButtonClose_Click(object sender, RoutedEventArgs e) => Close();
-      
+
+        private void ButtonMax_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState==WindowState.Normal)
+            {
+                ButtonMax.Content = "\xE923";
+                WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                ButtonMax.Content = "\xE922";
+                WindowState = WindowState.Normal;
+            }
+        }
+
+        private void ButtonMin_Click(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
     }
-
-
 }
