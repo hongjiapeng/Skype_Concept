@@ -12,6 +12,6 @@ E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept.csproj.CoreCompile
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept.exe
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept.pdb
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept.csprojAssemblyReference.cache
-E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Window1.g.cs
 E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Skype Concept_MarkupCompile.lref
-E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Window1.baml
+E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Window2.baml
+E:\GitHub\Skype Concept\Skype Concept\obj\Debug\Window2.g.cs

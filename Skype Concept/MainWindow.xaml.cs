@@ -1,19 +1,26 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Interop;
 
 namespace Skype_Concept
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        [DllImport("user32.dll")]
-        internal static extern int SetWindowCompositionAttribute(IntPtr hwnd,ref WindowCompositionAttributeData data);
+        #region field
 
-        public MainWindow() => InitializeComponent();
+        private int _mouseDownCount = 0;
+
+        #endregion
+
+        #region reference user32
+        [DllImport("user32.dll")]
+        internal static extern int SetWindowCompositionAttribute(IntPtr hwnd, ref WindowCompositionAttributeData data);
 
         internal enum AccentState
         {
@@ -60,45 +67,94 @@ namespace Skype_Concept
                 AccentState = AccentState.ACCENT_ENABLE_BLURBEHIND
             };
 
-            var accentStructSize= Marshal.SizeOf(accent);
+            var accentStructSize = Marshal.SizeOf(accent);
 
             var accentPtr = Marshal.AllocHGlobal(accentStructSize);
 
-            Marshal.StructureToPtr(accent,accentPtr,false);
+            Marshal.StructureToPtr(accent, accentPtr, false);
 
             var data = new WindowCompositionAttributeData
             {
-                Attribute=WindowCompositionAttribute.WCA_ACCENT_POLICY,
-                SizeOfData=accentStructSize,
-                Data=accentPtr
+                Attribute = WindowCompositionAttribute.WCA_ACCENT_POLICY,
+                SizeOfData = accentStructSize,
+                Data = accentPtr
             };
-
 
             SetWindowCompositionAttribute(windowHelper.Handle, ref data);
 
             Marshal.FreeHGlobal(accentPtr);
         }
+        #endregion
 
-        private void Window_Loaded(object sender, RoutedEventArgs e) => EnableBlur();
+        #region construction method
 
-        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e) => DragMove();
-
-        private void ButtonClose_Click(object sender, RoutedEventArgs e) => Close();
-
-        private void ButtonMax_Click(object sender, RoutedEventArgs e)
+        public MainWindow()
         {
-            if (WindowState==WindowState.Normal)
+            InitializeComponent();
+            Loaded += Window_Loaded;
+            MouseLeftButtonDown += Window_MouseLeftButtonDown;
+        }
+        #endregion
+
+        #region some event & some method
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var button = (Button)sender;
+            switch (button.Tag)
             {
-                ButtonMax.Content = "\xE923";
+                case "Minimized":
+                    WindowState = WindowState.Minimized;
+                    break;
+                case "Maximized":
+                    ChangeWinState(button);
+                    break;
+                case "Close":
+                    Close();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void ChangeWinState(Button button)
+        {
+            if (WindowState == WindowState.Normal)
+            {
+                button.Content = "\xE923";
                 WindowState = WindowState.Maximized;
             }
             else
             {
-                ButtonMax.Content = "\xE922";
+                button.Content = "\xE922";
                 WindowState = WindowState.Normal;
             }
         }
 
-        private void ButtonMin_Click(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
+        private void Window_Loaded(object sender, RoutedEventArgs e) => EnableBlur();
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) => DragMove();
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            _mouseDownCount++;
+
+            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer
+            {
+                Interval = TimeSpan.FromMilliseconds(300),
+                IsEnabled = true
+            };
+            timer.Tick += (s, ev) =>
+            {
+                timer.IsEnabled = false; _mouseDownCount = 0;
+            };
+            if (_mouseDownCount % 2 == 0)
+            {
+                ChangeWinState(ButtonMax);
+                //WindowState = (WindowState == WindowState.Normal) ? WindowState.Maximized : WindowState.Normal;
+            }
+
+        }
+
+        #endregion
     }
 }
