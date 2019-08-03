@@ -130,6 +130,20 @@
                 </StackPanel>
             </Grid>
 
+            <Grid Grid.Column="1">
+
+                <StackPanel>
+                    <TextBlock Text="Conversation" FontSize="20" FontWeight="Bold" Margin="10 20 10 10"/>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="&#xE1A3;" Margin="20 0 0 0" HorizontalAlignment="Left"  Height="28" Width="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets"/>
+                        <Button Content="&#xE109;" Margin="0 0 0 0" HorizontalAlignment="Left"  Height="28" Width="38" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Segoe MDL2 Assets"/>
+                    </StackPanel>
+
+                    
+                </StackPanel>
+            </Grid>
+            
             <Grid Grid.Column="2" Background="WhiteSmoke" Grid.RowSpan="2">
 
                 <Grid VerticalAlignment="Bottom" Height="38" Background="#FF00ADEF">
