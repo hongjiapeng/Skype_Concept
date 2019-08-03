@@ -4,17 +4,24 @@
 winexe
 C#
 .cs
-E:\GitHub\Skype Concept\Skype Concept\obj\Debug\
+E:\Github\Skype_Concept\Skype Concept\obj\Debug\
 Skype_Concept
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 E:\GitHub\Skype Concept\Skype Concept\App.xaml
 2603691550
 
 61586533909
+=======
+E:\Github\Skype_Concept\Skype Concept\App.xaml
+2462529049
+
+71281414691
+>>>>>>> cce5fef0a13395508778b21c6e0d3d7999c2ed4d
 131569487696
 Window2.xaml;MainWindow.xaml;
 
-False
+True
 
